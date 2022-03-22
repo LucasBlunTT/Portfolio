@@ -15,7 +15,7 @@
     border-radius: 50%;
     border: 5px solid $white-dracula;
     box-shadow: 0 0 0.4rem $white-dracula;
-    overflow: hidden;  
+    overflow: hidden;
     margin-right: 5rem;
   }
 
@@ -139,15 +139,14 @@
       max-width: 50.2rem;
       text-transform: uppercase;
     }
-    p {
-      font-weight: 500;
-      font-size: 1.6rem;
-      line-height: 150%;
-      color: $gray-02;
-    }
   }
   .content {
-    @include flex(row, flex-start, space-between);
+    @include flex(row, center, center);
+
+    li {
+      @include flex(column, center, center);
+    }
+
     .icon {
       @include flex(row, center, center);
       width: 6.4rem;
