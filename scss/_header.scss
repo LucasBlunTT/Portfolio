@@ -1,0 +1,77 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 11.9rem;
+  background-color: $black-dracula;
+  display: flex;
+  z-index: 2;
+  .container {
+    @include flex(row, center, space-between);
+
+    .cv {
+      display: flex;
+      align-items: center;
+      color: $black-dracula;
+      background-color: $green-dracula;
+      border-radius: 1.5rem;
+      border-color: $white-dracula;
+      border: 0.125rem solid;
+      transition: all 0.3s;
+      padding: 0.5rem 1.2rem;
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      font-family: "PT Sans", sans-serif;
+      font-weight: bold;     
+      &:hover {
+        background-color: $black-dracula;
+        color: $green-dracula;
+      }
+
+      .fa-download {
+        margin-left: 1rem;
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+  nav {
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        &:not(:first-child) {
+          margin-left: 5.6rem;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          span {
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: #fcfcfc;
+            margin-left: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+  @include responsive(600px) {
+    .container {
+      justify-content: center;
+    }
+    nav {
+      display: none;
+    }
+  }
+
+  @include responsive(480px) {
+    header {
+      height: 8rem;
+      .container {
+        max-width: 14rem;
+      }
+    }
+  }
+}
