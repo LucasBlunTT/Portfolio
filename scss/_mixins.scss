@@ -10,20 +10,3 @@
   align-items: $align;
   justify-content: $justify;
 }
-
-@mixin style-btn($height, $bg, $colorText) {
-  display: inline-block;
-  height: $height;
-  line-height: $height;
-  background-color: $bg;
-  border-radius: 0.6rem;
-  padding: 0rem 5rem;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s;
-  &:hover {
-    background-color: $colorText;
-    color: $bg;
-  }
-}
