@@ -6,6 +6,7 @@
   .container {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
   }
 
@@ -16,12 +17,16 @@
     border: 5px solid $white-dracula;
     box-shadow: 0 0 0.4rem $white-dracula;
     overflow: hidden;
-    margin-right: 5rem;
   }
 
   .text {
     width: 100%;
-    max-width: 55rem;
+    max-width: 58%;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     h5 {
       font-family: "PT Sans", sans-serif;
@@ -41,11 +46,16 @@
     }
 
     p {
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
       font-size: 1.8rem;
       line-height: 150%;
       color: $white-dracula;
       margin-bottom: 3.2rem;
-      max-width: 49.8rem;
+      strong{
+        color: $pink-dracula;
+      }
     }
   }
 
