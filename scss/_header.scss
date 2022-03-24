@@ -8,7 +8,16 @@ header {
   display: flex;
   z-index: 2;
   .container {
-    @include flex(row, center, center);
+    @include flex(row, center, space-between);
+
+    .my-name {
+      font-family: "PT Sans", sans-serif;
+      font-weight: bold;
+      font-size: 1.9rem;
+      line-height: 120%;
+      color: $white-dracula;    
+      text-transform: uppercase;
+    }
 
     .cv {
       display: flex;
