@@ -15,7 +15,7 @@ header {
       font-weight: bold;
       font-size: 1.9rem;
       line-height: 120%;
-      color: $white-dracula;    
+      color: $white-dracula;
       text-transform: uppercase;
     }
 
@@ -50,8 +50,11 @@ header {
   }
 
   @include responsive(600px) {
+    height: 6rem;
     .container {
-      justify-content: center;
+      justify-content: space-between;
+      margin-left: 5rem;
+      margin-right: 5rem;
     }
   }
 

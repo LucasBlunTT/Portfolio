@@ -91,14 +91,14 @@
 
   @include responsive(600px) {
     padding-top: 2.5rem;
-    margin-top: 8rem;
-    .text {
-      h1 {
-        font-size: 4.3rem;
-      }
+    margin-top: 6rem;
+    .profile-photo {
+      width: 200px;
+      height: 200px;
     }
-    .image {
-      left: 9px;
+
+    .text {
+      max-width: 90%;
     }
   }
 }
@@ -194,6 +194,19 @@
       }
     }
   }
+
+  @include responsive(600px) {
+    .content {
+      ul {
+        border-bottom: 3px solid rgba(95, 60, 161, 0.1);
+      }
+    }
+
+    .container {
+      max-width: 61.6rem;
+    }
+  }
+
   @include responsive(480px) {
     padding-top: 6rem;
     .content {
