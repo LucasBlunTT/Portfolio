@@ -19,9 +19,8 @@
     overflow: hidden;
   }
 
-  .text {
-    width: 100%;
-    max-width: 58%;
+  .text {   
+    max-width: 100%;
     margin-top: 6rem;
     display: flex;
     flex-direction: column;
@@ -86,6 +85,12 @@
       .conheca {
         justify-content: center;
       }
+    }
+  }
+
+  @include responsive(1920px) {
+    .text {
+      width: 90%;
     }
   }
 
@@ -159,6 +164,24 @@
     }
   }
 
+  @include responsive(1920px) {
+    .content{
+      ul{
+        max-width: 96.6rem;
+      }
+    }
+  }
+
+  @include responsive(1440px) {
+    .container {
+      .content {
+        ul {
+          max-width: 88.6rem;
+        }
+      }
+    }
+  }
+
   @include responsive(991px) {
     .content {
       flex-direction: column;
@@ -178,8 +201,15 @@
       }
     }
   }
+
+  @include responsive(800px) {
+    .container {
+      max-width: 77.6rem;
+    }
+  }
+
   @include responsive(768px) {
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-bottom: 5rem;
     .top {
       flex-direction: column;
