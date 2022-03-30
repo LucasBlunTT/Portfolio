@@ -17,7 +17,7 @@ header {
       line-height: 120%;
       color: $white-dracula;
       text-transform: uppercase;
-      i{
+      i {
         margin-right: 1rem;
       }
     }
@@ -62,10 +62,11 @@ header {
   }
 
   @include responsive(480px) {
-    header {
-      height: 8rem;
-      .container {
-        max-width: 14rem;
+    .container {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      .cv {
+        height: 3.5rem;
       }
     }
   }
