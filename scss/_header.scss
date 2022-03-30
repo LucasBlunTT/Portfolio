@@ -85,9 +85,30 @@ header {
 
   @include responsive(360px) {
     .container {
-     .my-name{
-       font-size: 1.4rem;
-     }
+      .my-name {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  @include responsive(320px) {
+    .container {
+      .my-name {
+        font-size: 1.1rem;
+      }
+
+      .cv {
+        height: 1.1rem;
+        width: 16rem;
+
+        span{
+          font-size: 5px;
+        }
+
+        .fa-download{
+          font-size: 9px;
+        }
+      }
     }
   }
 }

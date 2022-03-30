@@ -19,7 +19,7 @@
     overflow: hidden;
   }
 
-  .text {   
+  .text {
     max-width: 100%;
     margin-top: 6rem;
     display: flex;
@@ -106,6 +106,15 @@
       max-width: 90%;
     }
   }
+
+  @include responsive(320px) {
+    .container {
+      .profile-photo {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
 }
 
 .s-resources {
@@ -165,8 +174,8 @@
   }
 
   @include responsive(1920px) {
-    .content{
-      ul{
+    .content {
+      ul {
         max-width: 96.6rem;
       }
     }

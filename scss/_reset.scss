@@ -21,4 +21,8 @@ html {
   @include responsive(1280px) {
     font-size: 55%;
   }
+
+  @include responsive(320px) {
+    font-size: 40%;
+  }
 }
