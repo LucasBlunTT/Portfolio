@@ -82,4 +82,12 @@ header {
       }
     }
   }
+
+  @include responsive(360px) {
+    .container {
+     .my-name{
+       font-size: 1.4rem;
+     }
+    }
+  }
 }
