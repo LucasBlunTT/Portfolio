@@ -70,4 +70,16 @@ header {
       }
     }
   }
+
+  @include responsive(400px) {
+    .container {
+      .cv {
+        height: 3.5rem;
+        width: 20rem;
+        span {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
 }
