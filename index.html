@@ -18,9 +18,23 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Lucas da Silva - Frontend Developer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Lucas da Silva - Frontend Develope r</title>
   </head>
   <body>
+    <div class="loader-container">
+      <div class="spinner">
+        <span class="spinner-part-0"></span>
+        <span class="spinner-part-1"></span>
+        <span class="spinner-part-2"></span>
+        <span class="spinner-part-3"></span>
+        <span class="spinner-part-0"></span>
+        <span class="spinner-part-1"></span>
+        <span class="spinner-part-2"></span>
+        <span class="spinner-part-3"></span>
+      </div>
+    </div>
+
     <header>
       <div class="container">
         <a href="" class="my-name">
@@ -54,13 +68,13 @@
             Então desde que comecei a estudar desenvolvimento de aplicações web,
             eu me apaixonei pela área, e a cada dia estou buscando conhecimento
             para aperfeiçoar minhas habilidades no desenvolvimento de aplicações
-            WEB. 
-            Venho desenvolvendo projetos com:
+            WEB. Venho desenvolvendo projetos com:
             <strong>HTML, CSS, SASS, JavaScript, Figma, Git e GitHub.</strong>
-            <br /> <br>
-            Também sou formado em Técnico em Informática, e estou cursando Análise e
-            Desenvolvimento de Sistemas, em paralelo a isso sou aluno do curso Code Boost da
-            Insany Design.
+            <br />
+            <br />
+            Também sou formado em Técnico em Informática, e estou cursando
+            Análise e Desenvolvimento de Sistemas, em paralelo a isso sou aluno
+            do curso Code Boost da Insany Design.
           </p>
         </div>
       </div>
@@ -346,6 +360,11 @@
     </footer>
   </body>
 
+  <script>
+    $(window).on("load", function () {
+      $(".loader-container").delay(1000).fadeOut("slow");
+    });
+  </script>
   <script
     src="https://kit.fontawesome.com/a1290eaaac.js"
     crossorigin="anonymous"
