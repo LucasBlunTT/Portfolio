@@ -1,6 +1,6 @@
 .s-hero {
   background-color: $black-dracula;
-  /*margin-top: 8rem;*/
+  margin-top: 8rem;
   padding-top: 3.9rem;
 
   .container {
@@ -96,7 +96,7 @@
 
   @include responsive(600px) {
     padding-top: 2.5rem;
-    /*margin-top: 6rem;*/
+    margin-top: 6rem;
     .profile-photo {
       width: 200px;
       height: 200px;
