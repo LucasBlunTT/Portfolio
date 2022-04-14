@@ -52,6 +52,7 @@
       line-height: 150%;
       color: $white-dracula;
       margin-bottom: 3.2rem;
+
       strong {
         color: $pink-dracula;
       }
@@ -66,6 +67,7 @@
     .text {
       max-width: 100%;
       margin-bottom: 3rem;
+
       h1 {
         text-align: center;
       }
@@ -97,6 +99,7 @@
   @include responsive(600px) {
     padding-top: 2.5rem;
     margin-top: 6rem;
+
     .profile-photo {
       width: 200px;
       height: 200px;
@@ -124,6 +127,7 @@
   .top {
     @include flex(row, center, center);
     margin-bottom: 5.3rem;
+
     h2 {
       font-family: "PT Sans", sans-serif;
       font-weight: bold;
@@ -133,10 +137,12 @@
       max-width: 50.2rem;
       text-transform: uppercase;
     }
+
     &:nth-child(n + 2) {
       padding-top: 4.25rem;
     }
   }
+
   .content {
     @include flex(row, center, center);
 
@@ -153,6 +159,7 @@
 
     .info {
       max-width: 23.9rem;
+
       h4 {
         font-weight: bold;
         font-size: 1.8rem;
@@ -195,13 +202,16 @@
     .content {
       flex-direction: column;
       align-items: flex-start;
+
       .card-featured {
         max-width: 100%;
         height: auto;
         padding: 3rem;
         @include flex(column, center, center);
+
         .info {
           max-width: 100%;
+
           h4,
           p {
             text-align: center;
@@ -220,13 +230,16 @@
   @include responsive(768px) {
     padding-top: 5rem;
     padding-bottom: 5rem;
+
     .top {
       flex-direction: column;
+
       h2 {
         text-align: center;
         margin-bottom: 2rem;
       }
     }
+
     .content {
       ul {
         gap: 2.5rem;
@@ -248,13 +261,16 @@
 
   @include responsive(480px) {
     padding-top: 6rem;
+
     .content {
       ul {
         flex-direction: row;
         padding-left: 0px;
         margin-top: 3rem;
+
         li {
           @include flex(column, center, center);
+
           h4,
           p {
             text-align: center;
@@ -293,14 +309,17 @@ footer {
         height: 45px;
         width: 45px;
         transition: all 0.3s;
+
         &:hover {
           background-color: $black-dracula;
           color: $green-dracula;
         }
       }
     }
+
     .copy {
       margin-top: 2.75rem;
+
       h5 {
         font-family: "PT Sans", sans-serif;
         font-weight: bold;
