@@ -97,6 +97,7 @@
 
   @include responsive(600px) {
     padding-top: 2.5rem;
+    margin-top: 0;
 
     .profile-photo {
       width: 200px;
